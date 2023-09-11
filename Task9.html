@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* Head banner team */
+    .banner {
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        color: green;
+    }
+
+    /* styling sidebar */
+    .HTML {
+        background-color: green;
+        position: absolute;
+        font-size: 22px;
+        text-decoration: none;
+        Color: black;
+        padding: 10px;
+        border-radius: 0px 25px 25px 0px;
+        left: -190px;
+        transition: 0.5s;
+        opacity: 0.6;
+        /* opacity is used to make the color of the sidebar light */
+    }
+
+    .CSS {
+        background-color: blue;
+        position: absolute;
+        font-size: 22px;
+        text-decoration: none;
+        Color: black;
+        padding: 10px;
+        border-radius: 0px 25px 25px 0px;
+        left: -190px;
+        transition: 0.5s;
+        opacity: 0.6;
+        /* opacity is used to make the color of the sidebar light */
+    }
+
+    .Javascript {
+        background-color: red;
+        position: absolute;
+        font-size: 22px;
+        text-decoration: none;
+        Color: black;
+        padding: 10px;
+        border-radius: 0px 25px 25px 0px;
+        left: -190px;
+        transition: 0.5s;
+        opacity: 0.6;
+        /* opacity is used to make the color of the sidebar light */
+    }
+
+    .Bootstrap {
+        background-color: grey;
+        position: absolute;
+        font-size: 22px;
+        text-decoration: none;
+        Color: black;
+        padding: 10px;
+        border-radius: 0;
+        /* 0px 25px 25px 0px; * for ovel shape and 0 for square shape*/
+        left: -190px;
+        width: 50px;
+        transition: 0.5s;
+        opacity: 0.6;
+        /* opacity is used to make the color of the sidebar light */
+    }
+
+
+
+
+    /* Hover effect on sidebar */
+    .sidehoverbar a:hover {
+        left: 0px;
+        opacity: 1;
+        background-color: #634caf;
+    }
+
+    /* float icons*/
+    .sidehoverbar i {
+        float: right;
+    }
+
+    /* defining position of each nav bar */
+    .HTML {
+        top: 50px;
+        width: 210px;
+        height: 30px;
+    }
+
+    .CSS {
+        top: 110px;
+        width: 210px;
+        height: 30px;
+    }
+
+    .Javascript {
+        top: 170px;
+        width: 210px;
+        height: 30px;
+    }
+
+    .Bootstrap {
+        top: 230px;
+        width: 210px;
+        height: 30px;
+    }
+
+
+    /* content margin */
+    .hoverable-topic {
+        margin-left: 55px;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Geeksforgeeks and Slogan -->
+    <div class="banner">
+        <h1>Hoverable Side Navigation with Icon</h1>
+    </div>
+
+    <!-- Side navigation Bar -->
+    <div class="sidehoverbar">
+        <a href="#" class="HTML">
+            HTML tutourial
+            <i class="fa fa-edit"></i>
+        </a>
+
+        <a href="#" class="CSS">
+            CSS tutourial
+            <i class="fa fa-file-o"></i>
+        </a>
+
+        <a href="#" class="Javascript">
+            Javascript tutourial
+            <i class="fa fa-commenting"></i>
+        </a>
+
+        <a href="#" class="Bootstrap">
+            Bootstrap tutourial
+            <i class="fa fa-commenting"></i>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #80eb80;
+}
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 200px;
+  background-color: #a6f4a6;
+}
+
+.imgcontainer {
+  text-align: center;
+}
+
+img.avatar {
+    border: 10px solid #5dad5d; /* Set border color and width */
+    width: 325px;
+    height: 325px; /* Adjust height to match the width for a perfect circle */
+    border-radius: 50%; /* Make it a circle */
+    display: block; /* Ensures it's displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+.form-control {
+    width: 303px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #5dad5d;
+    width: 303px;
+    color: #fff;
+    padding: 9px 142px; /* Adjust padding to make the button longer */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Make it an inline-block element */
+    text-align: center; /* Center the text horizontally */
+    line-height: 1; /* Center the text vertically */
+}
+
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.box {
+    display: inline-block;
+    padding: 2px 28px;
+    border-radius: 45px;
+    text-align: center;
+    /* background-color: grey; */
+    margin-top: 27px;
+    cursor: pointer;
+    font-weight: normal;
+        }
+
+        .red-box {
+            background-color: red;
+    margin-top: 4px;
+    color: white;
+        }
+
+        .black-box {
+            margin-top: 4px;
+        }
+
+        .box:hover {
+            opacity: 0.8;
+        }
+        
+        .navbar {
+        background-color: #9edd9e;
+        overflow: hidden;
+        width: 303px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px; /* Adjust the height to your desired value */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+  <img class="avatar" src="image.jpg" alt="Avatar">
+  <form action="/login" method="post">
+    <label><b>Username</b></label>
+    <input type="text" class="form-control" name="username" placeholder="Enter_Username">
+    <label><b>Password</b></label>
+    <input type="password" class="form-control" name="password" placeholder="Enter_Password">
+    <input type="submit" class="btn" value="Login">
+    <input type="checkbox" checked="checked"> Remember me
+    <label>Remember Me</label>
+    <div class="navbar">
+        <div class="box red-box">Cancel</div>
+        <div class="box black-box"><a href="#" style="color: black;">Forgot password?</a></div>
+    </div>  
+</form>
+</div>
+</body>
+</html>
